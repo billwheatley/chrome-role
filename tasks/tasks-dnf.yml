@@ -1,0 +1,14 @@
+---
+- name: Ensure Google Chrome repo is present
+  yum_repository:
+    name: google-chrome
+    description: Google Chrome
+    baseurl: http://dl.google.com/linux/chrome/rpm/stable/x86_64
+    enabled: yes
+    gpgcheck: yes
+    gpgkey: https://dl.google.com/linux/linux_signing_key.pub
+- name: Ensure Google Chrome (Stable) dnf package is present
+  dnf:
+    update_cache: yes
+    name: google-chrome-stable
+    state: present
