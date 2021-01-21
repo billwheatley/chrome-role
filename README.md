@@ -1,4 +1,4 @@
-Role Name
+Chrome Broswer Role
 =========
 
 Ansible role to install Google Chrome (Stable) for dnf or apt based systems.
